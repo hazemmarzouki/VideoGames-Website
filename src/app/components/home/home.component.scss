@@ -1,0 +1,144 @@
+// filter-section start 
+.filters {
+    max-width: 1280px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+::ng-deep {
+    .mat-form-field-infix {
+        background-color: #FF6628;
+        border-radius: 5px;
+        padding-left: 5px !important;
+        border-top: none;
+
+
+    }
+
+    .mat-select-value,
+    .mat-select-arrow,
+    .mat-form-field-hide-placeholder .mat-select-placeholder,
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+        color: #fff !important;
+        opacity: 1;
+    }
+
+
+
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+        padding-left: 5px;
+    }
+
+    .mat-option.mat-active {
+        background: #5D0C12 !important;
+    }
+
+    .mat-option.mat-selected {
+        background: #EE3320 !important;
+        color: #fff !important;
+        transition: 2.5s;
+    }
+
+    .mat-form-field-appearance-legacy {
+        .mat-form-field-underline {
+            height: 0 !important;
+        }
+
+        .mat-form-field-wrapper {
+            padding-bottom: 0 !important;
+        }
+
+        .mat-form-field-infix {
+            // padding: 0 !important;
+            border-top: 0 !important;
+        }
+    }
+
+
+    .mat-focused {
+        .mat-form-field-label {
+            color: #181617 !important;
+
+        }
+
+        .mat-form-field-underline {
+            .mat-form-field-ripple {
+                display: none !important;
+
+            }
+        }
+    }
+}
+
+// filter section end 
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.game {
+    width: 280px;
+    margin: 10px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #202020;
+    box-shadow: 4px 3px 8px 0px rgba(53, 53, 53, 0.22);
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+
+    &:hover {
+        box-shadow: 4px 3px 11px 6px #EE3320;
+        transform: translateY(-3px);
+      }
+      &-thumb-container {
+        background-color: rgba(0, 0, 0, 75%);
+        position: relative;
+        height: 172px;
+        color: #fff;
+        text-align: center;
+      }
+    
+      &-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 200px;
+        width: 100%;
+              }
+    
+      &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 157px;
+      }
+    
+      &-name {
+        color: #fff;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    
+      &-platforms {
+        display: flex;
+      }
+    
+      &-platform {
+        width: 20px;
+        margin-right: 10px;
+      }
+    
+      
+    }

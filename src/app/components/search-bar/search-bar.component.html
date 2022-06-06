@@ -1,0 +1,18 @@
+<div class="search-container">
+    <form class="search-form"
+          #form="ngForm"
+          ngSubmit="OnSubmit(form)">
+        <span class="logo" routerLink="/">
+            <i class='fas fa-gamepad'></i>
+            VideoGames</span>
+        <div class="search-box">
+            <input class="search-input"
+                   name="search"
+                   ngModel 
+                   placeholder="Search 500,000+ Games .. " />
+            <button class="search-button"> search
+                <i class=" fas fa-search fa-1x"></i>
+            </button>
+        </div>
+    </form>
+</div>
